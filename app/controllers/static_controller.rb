@@ -1,5 +1,5 @@
 class StaticController < ApplicationController
-	def index
+	def home
 		@user = current_user
 	end
 end
