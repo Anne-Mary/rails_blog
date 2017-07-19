@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <title>BlogApp</title>
+    <title>Nike Central King's Cross Blog</title>
     <%= csrf_meta_tags %>
 
     <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track': 'reload' %>
@@ -11,7 +11,6 @@
   <body>
     <div id ="sidebar">
       <div id ="logo">
-
       <%= link_to root_path do %>
         <%= image_tag "NikeLogo1.jpg" %>
       <% end %>
@@ -19,11 +18,12 @@
       </div>
       <ul>
         <li class="category">Website</li>
-        <li> <% link_to "Blog", root_path %></li>
+        <li> <% link_to "Nike Blog", root_path %></li>
         <li>About Us</li>
         <li>Meet The Team</li>
         <li>Store Locator</li>
       </ul>
+
       <ul>
         <li class="social">Nike Social</li>
         <li><a href="http://nike.com/us/en_us/retail/en/nike-central-king-s-cross">Nike Website</li>
