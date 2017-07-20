@@ -13,28 +13,30 @@
       <div id ="logo">
 
       <%= link_to root_path do %>
-        <%= image_tag "NikeLogo1.jpg" %>
+      <!--   <%= image_tag "NikeLogo1.jpg" %> -->
       <% end %>
 
       </div>
       <ul>
         <li class="category">Website</li>
-        <li> <% link_to "Nike Blog", root_path %></li>
+        <li> <%= link_to "Nike Blog", posts_path %></li>
         <li>About Us</li>
         <li>Meet The Team</li>
         <li>Store Locator</li>
       </ul>
       <ul>
         <li class="social">Nike Social</li>
-        <li><a href="http://nike.com/us/en_us/retail/en/nike-central-king-s-cross">Nike Website</li>
-        <li><a href="http://twitter.com/nike">Twitter</li>
-        <li><a href="http://instagram.com/nike">Instagram</li>
+        <li><a href="http://nike.com/us/en_us/retail/en/nike-central-king-s-cross">Nike Website</a>></li>
+        <li><a href="http://twitter.com/nike">Twitter</a></li>
+        <li><a href="http://instagram.com/nike">Instagram</a></li>
       </ul>
-      
-    </div>
+             
 
        <p class="notice"><%= notice %></p>
        <p class="alert"><%= alert %></p>
+    </div>
+
+
     <%= yield %>
   </body>
 </html>
