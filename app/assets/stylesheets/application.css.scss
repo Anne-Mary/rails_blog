@@ -28,13 +28,127 @@ a {
 }
 
 #sidebar {
-	width: 250px;
-	position: fixed;
-	left: 0;
-	top:0;
-	height: 100%;
-	background: grey;
-	padding: 7em 0 0 0;
-	border-right: 1px solid black;
-	
+		width: 250px;
+		position: fixed;
+		left: 0;
+		top:0;
+		height: 100%;
+		background: grey;
+		padding: 7em 0 0 0;
+		border-right: 1px solid black;
+    #logo {
+		width: 40px;
+		position: absolute;
+		right: 3em;
+		top: 3em;
+		  }
+	ul{
+		list-style: none;
+		text-align: right;
+		padding-right: 3em;
+	.category {
+			font-weight: 700;
+			font-size: 0.7em;
+			text-transform: uppercase;
+			color: orange;
+			  }
+	li{
+		padding: .5em 0;
+		a {
+			colour: blue;
+			text-decoration: none;
+			transition: all .4s ease;
+			&: hover{
+				color: yellow;
+			        }
+		 }
+	}
+	.active {
+		a {
+			color: lightblue;
+		  }
+	    }	
+	  } 
+	  
+	 .sign-in {
+	  	position: absolute;
+	  	right: 3em;
+	  	top: 80%;
+	  	font-size: .8em;
+	  	color: green;
+	          } 
+	   }
+	   .button{
+	   	outline: none;
+	   	background: transparent;
+	   	border: 1px solid black;
+	   	padding: .5em 1.5em;
+	   	border-radius: 1.5em;
+	   	&:hover{
+	   		border: 1px solid #yellow;
+	   		color: green;
+	   		a {
+	   			color: #red !important;
+	   	       }
+	   		}
+	   }
+	  .clearfix: after {
+		content: ".";
+		visibility: hidden;
+		height: 0;
+		clear: both;
+	}
+
+#main_content {
+	margin-left: 250px;
+	#header {
+		padding: 1em 3em;
+		border-bottom: 1px solid orange;
+		background: white;
+		color: lightgreen;
+		p {
+			display: inline;
+		}
+		a {
+			color: blue;
+			text-decoration: none;
+		  }
+		.buttons {
+			float: right;
+			margin-top: -6px;
+			.button {
+				font-size: .8em;
+				margin-left: .5em;
+			}
+		} 
+	}
+   .post_wrapper{
+   	padding: 3em;
+   	border-bottom: 1px solid #red;
+   	.title{
+   		margin: 0;
+   	a {
+   		font-weight: 3em;
+   		text-decoration: none;
+   		color: #pink;
+   		font-size: 1.5em;
+   		&:hover {
+   			color: black;
+   		}
+
+   	  }
+   	}
+   	.date_and_user {
+   		color: orange;
+   		margin: . 5em 0 0 0;
+
+   	}
+  }
+  #post_content {
+  	padding: 1em 3em;
+  	.title{
+  		font-weight: 500px;
+  	}
+  }
 }
+
