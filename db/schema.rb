@@ -20,6 +20,8 @@ ActiveRecord::Schema.define(version: 20170717164424) do
     t.string "body"
     t.date "date"
     t.bigint "user_id"
+    t.datetime "created_at", null: false
+    t.datetime "updated_at", null: false
     t.index ["user_id"], name: "index_posts_on_user_id"
   end
 

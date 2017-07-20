@@ -9,8 +9,8 @@ class PostsController < ApplicationController
 
 	def create
 		@post = Post.create(post_params)
-		@post.user_id = current_user.id
-		@post.date = Time.now
+		# @post.user_id = current_user.id
+		# @post.date = Time.now
 		@post.save 
 
 		redirect_to @post  
