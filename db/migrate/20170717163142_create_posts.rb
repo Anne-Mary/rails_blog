@@ -6,6 +6,7 @@ class CreatePosts < ActiveRecord::Migration[5.1]
       t.date :date
       t.belongs_to :user, index: true
       t.timestamps null: false
+      
     end
   end
 end
