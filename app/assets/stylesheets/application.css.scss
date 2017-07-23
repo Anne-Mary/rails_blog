@@ -36,16 +36,20 @@ a {
 	top: 0;
 	vertical-align: top;
 	height: 100vh;
-	background: grey;
+	background: black;
 	padding: 7em 0 0 0;
-	border-right: 1px solid black;
+	border-right: 12px solid lightgrey;
 	display: inline-block;
 	overflow: hidden;
-    #logo {
+    .logo {
 		width: 40px;
 		position: absolute;
 		right: 3em;
 		top: 3em;
+		  }
+		  .img src{
+		  	margin-left: -458px;
+           width: 83px;
 		  }
 	ul{
 		list-style: none;
@@ -59,8 +63,10 @@ a {
 			  }
 	li{
 		padding: .5em 0;
+		color: white;
+		font-size: 15px;
 		a {
-			colour: blue;
+			color: white;
 			text-decoration: none;
 			transition: all .4s ease;
 			hover{
@@ -83,21 +89,7 @@ a {
 	  	color: green;
 	          } 
 	   }
-	   .button{
-	   	outline: none;
-	   	background: transparent;
-	   	border: 1px solid black;
-	   	padding: .5em 1.5em;
-	   	border-radius: 1.5em;
-	   	&:hover{
-	   		border: 1px solid #yellow;
-	   		color: green;
-	   		a {
-	   			color: #red !important;
-	   	       }
-	   		}
-	   }
-	  
+	
 	  after {
 		content: ".";
 		visibility: hidden;
@@ -107,8 +99,8 @@ a {
 .post_wrapper {
    	display: inline-block;
     height: 100vh;
-    overflow: scroll;
-    width: 200px;
+    /*overflow: scroll;*/
+    width: 296px;
 
    	padding: 3em;
    	border-bottom: 1px solid #red;
@@ -166,6 +158,21 @@ a {
     .body {
     	font-size: 1.1em;
     	line-height: 1.75;
+    	.button{
+	   	outline: none;
+	   	background: transparent;
+	   	border: 1px solid orange;
+	   	padding: .5em 1.5em;
+	   	border-radius: 1.5em;
+	   	&:hover{
+	   		border: 1px solid #yellow;
+	   		color: green;
+	   		a {
+	   			color: #red !important;
+	   	       }
+	   		}
+	   }
+	  
     }
     .date_and_user {
     	color: pink;
@@ -236,6 +243,7 @@ a {
   }
 
 }
+
 .links {
 	margin: 2em 0;
 }

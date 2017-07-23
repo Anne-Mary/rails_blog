@@ -6,27 +6,28 @@
 
     <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track': 'reload' %>
     <%= javascript_include_tag 'application', 'data-turbolinks-track': 'reload' %>
-  </head>
+</head>
+<body>
 
-  <body>
     <div id ="sidebar">
-      <div id ="logo">
-
-      <%= link_to root_path do %>
-      <!--   <%= image_tag "NikeLogo1.jpg" %> -->
-      <% end %>
-
+    <div class ="logo">
+        <%= link_to posts_path do %>
+          <%= image_tag "nikelogo3.jpg" %> 
+        <% end %>
       </div>
+
+
       <ul>
-        <li class="category">Website</li>
-        <li> <%= link_to "Nike Blog", posts_path %></li>
+        <li class="category">Nike Central King's Cross</li>
+        <li> <%= link_to "Blog", posts_path %></li>
         <li>About Us</li>
         <li>Meet The Team</li>
         <li>Store Locator</li>
       </ul>
+
       <ul>
-        <li class="social">Nike Social</li>
-        <li><a href="http://nike.com/us/en_us/retail/en/nike-central-king-s-cross">Nike Website</a>></li>
+        <li class="category">Nike Social</li>
+        <li><a href="http://nike.com/us/en_us/retail/en/nike-central-king-s-cross">Nike Website</a></li>
         <li><a href="http://twitter.com/nike">Twitter</a></li>
         <li><a href="http://instagram.com/nike">Instagram</a></li>
       </ul>
@@ -35,19 +36,16 @@
        <p class="notice"><%= notice %></p>
        <p class="alert"><%= alert %></p>
        
-<div id= "main_content">
-      <div id = "header">
-       <p>All Posts</p>
-         <div class ="buttons">
-        <button class ="button"><%= link_to "New Post", new_post_path %> </button>
-        <button class="button">Log Out</button>
-    </div>
+    <!-- <div id= "main_content"> -->
+      <!-- <div id = "header"> -->
+        
+
+        <div class ="buttons">
+          <button class ="button"><%= link_to "New Post", new_post_path %> </button>
+          <button class="button">Log Out</button>
+        </div>
       </div>
-          </div>
-
-    
-
-
+    </div>
 
 
     </div>
