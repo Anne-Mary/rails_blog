@@ -1,4 +1,5 @@
 class PostsController < ApplicationController
+	before_action :set_upload, only: [:show, :edit, :update, :destroy]
 	def index
 		@posts = Post.all
 	end
@@ -41,5 +42,9 @@ class PostsController < ApplicationController
 	def post_params
 		params.require(:post).permit(:title, :body)
 	end
+    # Use callbacks to share common setup or constraints between actions.
+    def set_upload
+      @post = Post.find(params[:id])
+    end
 
 end

@@ -4,6 +4,7 @@ class CreatePosts < ActiveRecord::Migration[5.1]
       t.string :title
       t.string :body
       t.date :date
+      t.string :image
       t.belongs_to :user, index: true
       t.timestamps null: false
       
